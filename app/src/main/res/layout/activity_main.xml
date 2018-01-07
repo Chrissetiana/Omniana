@@ -9,21 +9,22 @@
         android:id="@+id/imageLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:padding="30dp"
         android:src="@drawable/omniana" />
 
     <TextView
         android:id="@+id/textDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:padding="5dp"
-        android:text="Technocentric." />
+        android:padding="20dp"
+        android:text="Omniana is a technocentric company that deals with the production of programs and services for diverse purposes and forms." />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp">
 
         <ImageView
             android:id="@+id/imageContact"
@@ -43,7 +44,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp">
 
         <ImageView
             android:id="@+id/imageAddress"
@@ -63,7 +66,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp">
 
         <ImageView
             android:id="@+id/imageHours"
@@ -77,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Mon-Sat, 9 AM to 9 PM" />
+            android:text="Mondays to Saturdays\n9 AM to 9 PM" />
     </LinearLayout>
 
 
