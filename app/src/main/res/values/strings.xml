@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Omniana</string>
+    <string name="description">Omniana is a technocentric company that deals with the production of programs and services for diverse purposes and forms.</string>
+    <string name="email">info@omniana.xyz</string>
+    <string name="address">Abuja, Nigeria</string>
+    <string name="hours">Monday to Saturday\n9 AM to 9 PM</string>
 </resources>
