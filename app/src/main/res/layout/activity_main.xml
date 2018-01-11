@@ -6,9 +6,9 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/company"
         android:paddingBottom="10dp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
@@ -16,7 +16,6 @@
         android:src="@drawable/omniana" />
 
     <TextView
-        android:id="@+id/textDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -28,17 +27,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingBottom="8dp"
-        android:paddingLeft="8dp">
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
 
         <ImageView
-            android:id="@+id/imagePhone"
             android:layout_width="24dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
+            android:contentDescription="@string/phone"
             android:src="@drawable/phone" />
 
         <TextView
-            android:id="@+id/textPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -51,17 +50,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingBottom="8dp"
-        android:paddingLeft="8dp">
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
 
         <ImageView
-            android:id="@+id/imageMail"
             android:layout_width="24dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
+            android:contentDescription="@string/email"
             android:src="@drawable/mail" />
 
         <TextView
-            android:id="@+id/textMail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -74,17 +73,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingBottom="8dp"
-        android:paddingLeft="8dp">
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
 
         <ImageView
-            android:id="@+id/imageWeb"
             android:layout_width="24dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
+            android:contentDescription="@string/web"
             android:src="@drawable/web" />
 
         <TextView
-            android:id="@+id/textWeb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -97,17 +96,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingBottom="8dp"
-        android:paddingLeft="8dp">
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
 
         <ImageView
-            android:id="@+id/imageAddress"
             android:layout_width="24dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
+            android:contentDescription="@string/address"
             android:src="@drawable/map" />
 
         <TextView
-            android:id="@+id/textAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -120,17 +119,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingBottom="8dp"
-        android:paddingLeft="8dp">
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
 
         <ImageView
-            android:id="@+id/imageHours"
             android:layout_width="24dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
+            android:contentDescription="@string/hours"
             android:src="@drawable/time" />
 
         <TextView
-            android:id="@+id/textHours"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"

@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Omniana</string>
+    <string name="company">Omniana</string>
     <string name="description">Omniana is a technocentric company that deals with the production of programs and services for diverse purposes and forms.</string>
     <string name="phone">+234 812 345 6789</string>
     <string name="email">info@omniana.xyz</string>
     <string name="web">www.omniana.xyz</string>
     <string name="address">Abuja, Nigeria</string>
-    <string name="hours">Mondays to Saturdays\n9 AM to 9 PM</string>
+    <string name="hours">Mondays to Fridays\n9 AM to 9 PM</string>
 </resources>
