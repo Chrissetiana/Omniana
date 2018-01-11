@@ -9,10 +9,10 @@
         android:id="@+id/imageLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:paddingBottom="10dp"
+        android:paddingTop="30dp"
         android:src="@drawable/omniana" />
 
     <TextView
@@ -31,18 +31,64 @@
         android:paddingLeft="8dp">
 
         <ImageView
-            android:id="@+id/imageContact"
+            android:id="@+id/imagePhone"
             android:layout_width="24dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
             android:src="@drawable/mail" />
 
         <TextView
-            android:id="@+id/textContact"
+            android:id="@+id/textPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/phone"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp">
+
+        <ImageView
+            android:id="@+id/imageMail"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:src="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/textMail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:text="@string/email"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp">
+
+        <ImageView
+            android:id="@+id/imageWeb"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:src="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/textWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/web"
             android:textSize="20sp" />
     </LinearLayout>
 
