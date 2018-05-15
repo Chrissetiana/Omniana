@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Omniana.iml" filepath="$PROJECT_DIR$/Omniana.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/omniana.iml" filepath="$PROJECT_DIR$/omniana.iml" />
     </modules>
   </component>
 </project>
