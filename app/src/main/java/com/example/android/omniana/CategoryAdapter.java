@@ -12,11 +12,17 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return null;
+        if (position == 0) {
+            return new AboutFragment();
+        } else if (position == 1) {
+            return new ProjectsFragment();
+        } else {
+            return new ServicesFragment();
+        }
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return 3;
     }
 }
