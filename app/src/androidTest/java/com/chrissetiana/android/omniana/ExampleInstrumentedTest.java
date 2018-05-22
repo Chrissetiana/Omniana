@@ -1,4 +1,4 @@
-package com.example.android.omniana;
+package com.chrissetiana.android.omniana;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
