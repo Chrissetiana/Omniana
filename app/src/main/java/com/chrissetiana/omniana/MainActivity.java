@@ -1,4 +1,4 @@
-package com.chrissetiana.android.omniana;
+package com.chrissetiana.omniana;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;

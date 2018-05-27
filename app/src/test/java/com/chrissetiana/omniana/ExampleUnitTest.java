@@ -1,4 +1,4 @@
-package com.chrissetiana.android.omniana;
+package com.chrissetiana.omniana;
 
 import org.junit.Test;
 
