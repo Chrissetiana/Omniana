@@ -1,5 +1,4 @@
 <resources>
-    
     <string name="app_name">Omniana</string>
 
     <string name="category_about">About</string>
@@ -13,5 +12,4 @@
     <string name="web">www.omniana.xyz</string>
     <string name="address">Abuja, Nigeria</string>
     <string name="hours">Mondays to Fridays\n9 AM to 9 PM</string>
-
 </resources>

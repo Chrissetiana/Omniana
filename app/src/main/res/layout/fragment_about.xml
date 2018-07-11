@@ -10,137 +10,144 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/outer">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_margin="@dimen/outer"
             android:contentDescription="@string/company"
-            android:paddingTop="10dp"
             android:src="@drawable/omniana" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="15dp"
+            android:gravity="fill"
+            android:paddingBottom="@dimen/inner"
+            android:paddingLeft="@dimen/outer"
+            android:paddingRight="@dimen/outer"
             android:text="@string/description"
-            android:textSize="20sp" />
+            android:textSize="@dimen/text_size" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp">
+            android:paddingBottom="@dimen/inner"
+            android:paddingLeft="@dimen/outer"
+            android:paddingRight="@dimen/outer"
+            android:paddingTop="@dimen/inner">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:contentDescription="@string/phone"
                 android:src="@drawable/phone" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:text="@string/phone"
-                android:textSize="20sp" />
+                android:textSize="@dimen/text_size" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp">
+            android:paddingBottom="@dimen/inner"
+            android:paddingLeft="@dimen/outer"
+            android:paddingRight="@dimen/outer"
+            android:paddingTop="@dimen/inner">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:contentDescription="@string/email"
                 android:src="@drawable/mail" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:text="@string/email"
-                android:textSize="20sp" />
+                android:textSize="@dimen/text_size" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp">
+            android:paddingBottom="@dimen/inner"
+            android:paddingLeft="@dimen/outer"
+            android:paddingRight="@dimen/outer"
+            android:paddingTop="@dimen/inner">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:contentDescription="@string/web"
                 android:src="@drawable/web" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:text="@string/web"
-                android:textSize="20sp" />
+                android:textSize="@dimen/text_size" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp">
+            android:paddingBottom="@dimen/inner"
+            android:paddingLeft="@dimen/outer"
+            android:paddingRight="@dimen/outer"
+            android:paddingTop="@dimen/inner">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:contentDescription="@string/address"
                 android:src="@drawable/map" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:text="@string/address"
-                android:textSize="20sp" />
+                android:textSize="@dimen/text_size" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp">
+            android:paddingLeft="@dimen/outer"
+            android:paddingRight="@dimen/outer"
+            android:paddingTop="@dimen/inner">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:contentDescription="@string/hours"
                 android:src="@drawable/time" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/inner"
                 android:text="@string/hours"
-                android:textSize="20sp" />
+                android:textSize="@dimen/text_size" />
         </LinearLayout>
 
     </LinearLayout>

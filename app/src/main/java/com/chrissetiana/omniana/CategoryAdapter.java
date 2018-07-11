@@ -9,7 +9,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     private Context context;
 
-    public CategoryAdapter(Context con, FragmentManager fm) {
+    CategoryAdapter(Context con, FragmentManager fm) {
         super(fm);
         context = con;
     }
@@ -40,5 +40,4 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 3;
     }
-
 }
