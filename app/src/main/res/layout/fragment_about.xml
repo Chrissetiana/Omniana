@@ -1,155 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/omniana_about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".AboutFragment">
+    android:orientation="vertical"
+    tools:context="AboutFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="@dimen/outer">
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/company"
+        android:src="@drawable/omniana"
+        app:layout_constraintBottom_toTopOf="@+id/text_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/outer"
-            android:contentDescription="@string/company"
-            android:src="@drawable/omniana" />
+    <TextView
+        android:id="@+id/text_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/description"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintBottom_toTopOf="@+id/image_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="fill"
-            android:paddingBottom="@dimen/inner"
-            android:paddingLeft="@dimen/outer"
-            android:paddingRight="@dimen/outer"
-            android:text="@string/description"
-            android:textSize="@dimen/text_size" />
+    <ImageView
+        android:id="@+id/image_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/phone"
+        android:src="@drawable/phone"
+        app:layout_constraintBottom_toTopOf="@id/image_email"
+        app:layout_constraintEnd_toStartOf="@id/text_phone"
+        app:layout_constraintStart_toStartOf="@+id/text_about"
+        app:layout_constraintTop_toBottomOf="@+id/text_about" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="@dimen/inner"
-            android:paddingLeft="@dimen/outer"
-            android:paddingRight="@dimen/outer"
-            android:paddingTop="@dimen/inner">
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/image_phone"
+        app:layout_constraintEnd_toEndOf="@+id/text_about"
+        app:layout_constraintStart_toEndOf="@id/image_phone"
+        app:layout_constraintTop_toTopOf="@id/image_phone" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/inner"
-                android:contentDescription="@string/phone"
-                android:src="@drawable/phone" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/inner"
-                android:text="@string/phone"
-                android:textSize="@dimen/text_size" />
-        </LinearLayout>
+    <ImageView
+        android:id="@+id/image_email"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:contentDescription="@string/email"
+        android:src="@drawable/mail"
+        app:layout_constraintBottom_toTopOf="@+id/image_web"
+        app:layout_constraintEnd_toEndOf="@+id/image_phone"
+        app:layout_constraintStart_toStartOf="@+id/image_phone"
+        app:layout_constraintTop_toBottomOf="@+id/image_phone" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="@dimen/inner"
-            android:paddingLeft="@dimen/outer"
-            android:paddingRight="@dimen/outer"
-            android:paddingTop="@dimen/inner">
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/image_email"
+        app:layout_constraintEnd_toEndOf="@+id/text_phone"
+        app:layout_constraintStart_toStartOf="@+id/text_phone"
+        app:layout_constraintTop_toTopOf="@id/image_email" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/inner"
-                android:contentDescription="@string/email"
-                android:src="@drawable/mail" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/inner"
-                android:text="@string/email"
-                android:textSize="@dimen/text_size" />
-        </LinearLayout>
+    <ImageView
+        android:id="@+id/image_web"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:contentDescription="@string/web"
+        android:src="@drawable/web"
+        app:layout_constraintBottom_toTopOf="@+id/image_location"
+        app:layout_constraintEnd_toEndOf="@+id/image_email"
+        app:layout_constraintStart_toStartOf="@+id/image_email"
+        app:layout_constraintTop_toBottomOf="@+id/image_email" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="@dimen/inner"
-            android:paddingLeft="@dimen/outer"
-            android:paddingRight="@dimen/outer"
-            android:paddingTop="@dimen/inner">
+    <TextView
+        android:id="@+id/text_web"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/web"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/image_web"
+        app:layout_constraintEnd_toEndOf="@+id/text_email"
+        app:layout_constraintStart_toStartOf="@+id/text_email"
+        app:layout_constraintTop_toTopOf="@id/image_web" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/inner"
-                android:contentDescription="@string/web"
-                android:src="@drawable/web" />
+    <ImageView
+        android:id="@+id/image_location"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:contentDescription="@string/address"
+        android:src="@drawable/map"
+        app:layout_constraintBottom_toTopOf="@+id/image_sched"
+        app:layout_constraintEnd_toEndOf="@+id/image_web"
+        app:layout_constraintStart_toStartOf="@+id/image_web"
+        app:layout_constraintTop_toBottomOf="@+id/image_web" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/inner"
-                android:text="@string/web"
-                android:textSize="@dimen/text_size" />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/image_location"
+        app:layout_constraintEnd_toEndOf="@+id/text_web"
+        app:layout_constraintStart_toStartOf="@+id/text_web"
+        app:layout_constraintTop_toTopOf="@id/image_location" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="@dimen/inner"
-            android:paddingLeft="@dimen/outer"
-            android:paddingRight="@dimen/outer"
-            android:paddingTop="@dimen/inner">
+    <ImageView
+        android:id="@+id/image_sched"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/hours"
+        android:src="@drawable/time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/image_location"
+        app:layout_constraintStart_toStartOf="@+id/image_location"
+        app:layout_constraintTop_toBottomOf="@+id/image_location" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/inner"
-                android:contentDescription="@string/address"
-                android:src="@drawable/map" />
+    <TextView
+        android:id="@+id/text_sched"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hours"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/image_sched"
+        app:layout_constraintEnd_toEndOf="@+id/text_location"
+        app:layout_constraintStart_toStartOf="@+id/text_location"
+        app:layout_constraintTop_toTopOf="@id/image_sched" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/inner"
-                android:text="@string/address"
-                android:textSize="@dimen/text_size" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="@dimen/outer"
-            android:paddingRight="@dimen/outer"
-            android:paddingTop="@dimen/inner">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/inner"
-                android:contentDescription="@string/hours"
-                android:src="@drawable/time" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/inner"
-                android:text="@string/hours"
-                android:textSize="@dimen/text_size" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-</ScrollView>
+</android.support.constraint.ConstraintLayout>

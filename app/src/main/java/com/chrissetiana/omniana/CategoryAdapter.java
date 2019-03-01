@@ -9,9 +9,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     private Context context;
 
-    CategoryAdapter(Context con, FragmentManager fm) {
+    CategoryAdapter(Context context, FragmentManager fm) {
         super(fm);
-        context = con;
+        this.context = context;
     }
 
     @Override
